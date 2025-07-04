@@ -1,28 +1,60 @@
-# PUSH-BUTTON
+# 🔘 PUSH-BUTTON
 
-The push button is used to manually start the robot, trigger auto-calibration, or switch between multiple modes.  
+The push button is used to manually:
+- ✅ Start the robot  
+- ✅ Trigger auto-calibration  
+- ✅ Switch between multiple modes  
+
 It provides flexible control without needing to reconnect or reprogram the Arduino.
 
-# Arduino Button Input with Internal Pull-up
+---
+
+## 🚀 Arduino Button Input with Internal Pull-up
 
 This project demonstrates how to use a **push button** with an **Arduino Uno** using the internal pull-up resistor, and how to read its state using `digitalRead()`.
+
+---
+
+## ⚙️ Button Types
+
+### 🔹 Type 1: Active-LOW (Default HIGH)
+
+**Behavior:**
+- Button NOT pressed: `HIGH (1)` → pin connected to 5V through pull-up resistor  
+- Button pressed: `LOW (0)` → pin shorted to GND  
+
+---
+
+### 🔹 Type 2: Active-HIGH (Default LOW)
+
+**Behavior:**
+- Button NOT pressed: `LOW (0)` → pin connected to GND  
+- Button pressed: `HIGH (1)` → pin connected to 5V through pull-up resistor  
+
+⚠️ Requires **external pull-down resistor**, as Arduino doesn’t have internal pull-down.
+
+---
 
 ## 🧰 Components Used
 
 - Arduino Uno R3  
 - Push Button  
-- 10kΩ Resistor (used for simulation, not needed with internal pull-up)  
+- Resistor (for pull-down simulation, not needed for internal pull-up)  
 - Jumper Wires  
-- Breadboard (if in physical setup)  
-- Voltmeter (to measure voltage across button terminals)
+- Breadboard (for prototyping)  
+- Voltmeter (optional, to monitor voltage across button terminals)
 
-## 🔌 Circuit Explanation
+---
 
-- One leg of the push button is connected to **GND**.
-- The other leg is connected to **Digital Pin 12**.
-- `pinMode(12, INPUT_PULLUP);` enables Arduino's **internal pull-up resistor**, so no external pull-up is needed.
-- When the button is **not pressed**, Pin 12 reads **HIGH (1)** due to pull-up.
-- When the button is **pressed**, Pin 12 is connected to **GND**, so it reads **LOW (0)**.
+## 🔌 Circuit Explanation (Active-LOW)
+
+- One leg of the push button is connected to **GND**
+- Other leg is connected to **Digital Pin 12**
+- `pinMode(12, INPUT_PULLUP);` activates Arduino's **internal pull-up resistor**
+
+**🧠 Note:** This makes the default state **HIGH**, and pressing the button pulls it **LOW**.
+
+---
 
 ## 🖥️ Arduino Code
 
