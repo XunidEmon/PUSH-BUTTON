@@ -61,7 +61,7 @@ This project demonstrates how to use a **push button** with an **Arduino Uno** u
 ```cpp
 void setup() {
   Serial.begin(9600);
-  pinMode(12, INPUT_PULLUP);
+  pinMode(12, INPUT);
 }
 
 void loop() {
