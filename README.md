@@ -9,9 +9,9 @@ It provides flexible control without needing to reconnect or reprogram the Ardui
 
 ---
 
-## 🚀 Arduino Button Input with Internal Pull-up
+## 🚀 Arduino Button Input
 
-This project demonstrates how to use a **push button** with an **Arduino Uno** using the internal pull-up resistor, and how to read its state using `digitalRead()`.
+This project demonstrates how to use a **push button** with an **Arduino Uno** using the resistor, and how to read its state using `digitalRead()`.
 
 ---
 
