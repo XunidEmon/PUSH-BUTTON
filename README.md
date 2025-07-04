@@ -1,15 +1,19 @@
 # PUSH-BUTTON
+
+The push button is used to manually start the robot, trigger auto-calibration, or switch between multiple modes.  
+It provides flexible control without needing to reconnect or reprogram the Arduino.
+
 # Arduino Button Input with Internal Pull-up
 
 This project demonstrates how to use a **push button** with an **Arduino Uno** using the internal pull-up resistor, and how to read its state using `digitalRead()`.
 
 ## 🧰 Components Used
 
-- Arduino Uno R3
-- Push Button
-- 10kΩ Resistor (used for simulation, but not needed in real pull-up)
-- Jumper Wires
-- Breadboard (if in physical setup)
+- Arduino Uno R3  
+- Push Button  
+- 10kΩ Resistor (used for simulation, not needed with internal pull-up)  
+- Jumper Wires  
+- Breadboard (if in physical setup)  
 - Voltmeter (to measure voltage across button terminals)
 
 ## 🔌 Circuit Explanation
