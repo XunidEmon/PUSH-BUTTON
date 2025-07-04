@@ -39,7 +39,7 @@ This project demonstrates how to use a **push button** with an **Arduino Uno** u
 
 - Arduino Uno R3  
 - Push Button  
-- Resistor (for pull-down simulation, not needed for internal pull-up)  
+- Resistor (for pull-down simulation, not needed for internal pull-up)  D13 A6 A7 Do not normaly have input pull up feature
 - Jumper Wires  
 - Breadboard (for prototyping)  
 - Voltmeter (optional, to monitor voltage across button terminals)
